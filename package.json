@@ -1,0 +1,33 @@
+{
+    "name": "ecommerce",
+    "version": "1.0.0",
+    "description": "An ecommerce project for students at DevMountain to practice using MongoDB",
+    "main": "server.js",
+    "scripts": {
+        "postinstall": "cd public && bower install && cd .. && npm start",
+        "start": "NODE_ENV=development nodemon server.js",
+        "test": "NODE_ENV=test mocha test test/productsCtrl.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/asBrettisay/ecommerce.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/asBrettisay/ecommerce/issues"
+    },
+    "homepage": "https://github.com/asBrettisay/ecommerce#readme",
+    "dependencies": {
+        "body-parser": "^1.15.0",
+        "express": "^4.13.4",
+        "mongoose": "^4.4.20"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "chai-http": "^2.0.1",
+        "faker": "^3.1.0",
+        "nodemon": "^1.9.1"
+    }
+}
